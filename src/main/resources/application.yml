@@ -1,0 +1,13 @@
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 8080
+
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:${server.port}/oauth2/check_token
+    client:
+      client-id: first-client
+      client-secret: noonewilleverguess
